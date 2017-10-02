@@ -1,0 +1,41 @@
+
+---------------------------------- AWS Autoscale Suspend / Resume utility usage -------------------------------------
+
+This utility suspends or resumes Autoscaling Group processes    
+
+This script will: 
+* Suspend the processes in one or more Autoscaling Group(s) 
+* Resume the processes in one or more Autoscaling Group(s) 
+
+---------------------------------------------------------------------------------------------------------------------
+
+usage:
+       aws-asg-suspend-resume.sh -a u -n all -p myAWSCLIprofile 
+   
+       Optional parameters: -b y -g y 
+
+Where: 
+ -a - Modification action to apply - suspend or resume autoscaling. Enter s for suspend or u for resume. 
+        Example: -a u 
+
+ -n - Name of the Autoscaling Group(s) to suspend or resume. Enter partial text to match similar 
+      Autoscaling Group names. Enter 'all' for all Autoscaling Groups.
+        Example: -n myAutoscalingGroupName 
+        Example: -n myAuto 
+        Example: -n all 
+    
+ -p - Name of the AWS CLI cli_profile (i.e. what you would pass to the --profile parameter in an AWS CLI command)
+        Example: -p myAWSCLIprofile 
+    
+ -b - Verbose console output. Set to 'y' for verbose console output. Note: verbose mode can be slow.
+        Example: -b y 
+
+ -g - Logging on / off. Default is off. Set to 'y' to create a debug log. Note: logging mode can be slower. 
+        Example: -g y 
+
+ -h - Display this message
+        Example: -h 
+
+ ---version - Display the script version
+        Example: --version 
+
