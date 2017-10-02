@@ -36,13 +36,13 @@ To execute the utility directly:
 
 ## Output
 
-This utility produces a summary report. 
-
-This utility can produce a log (with the -g y parameter) and each log can be run in console verbose mode (with the -b y parameter). 
+* Summary report 
+* Debug log (execute with the -g y parameter) 
+* Console verbose mode (run with the -b y parameter) 
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct and the process for submitting pull requests to us.
 
 ## Versioning
 
