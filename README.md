@@ -8,17 +8,17 @@ This utility provides Autoscaling suspend/resume functionality unavailable in th
 
 1. Instantiate a local or EC2 Linux instance
 2. Install or update the AWS CLI utilities
-  * The AWS CLI utilities are pre-installed on AWS EC2 Linux instances
-  * To update on an AWS EC2 instance: `$ sudo pip install --upgrade awscli` 
+    * The AWS CLI utilities are pre-installed on AWS EC2 Linux instances
+    * To update on an AWS EC2 instance: `$ sudo pip install --upgrade awscli` 
 3. Create an AWS CLI named profile that includes the required IAM permissions (see "[Prerequisites](#prerequisites)" section for required IAM permissions)
-  * To create an AWS CLI named profile: `$ aws configure --profile MyProfileName`
-  * AWS CLI named profile documentation is here: [Named Profiles](http://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html)
+    * To create an AWS CLI named profile: `$ aws configure --profile MyProfileName`
+    * AWS CLI named profile documentation is here: [Named Profiles](http://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html)
 4. Install the [bash](https://www.gnu.org/software/bash/) shell
-  * The bash shell is included in most distributions and is pre-installed on AWS EC2 Linux instances
+    * The bash shell is included in most distributions and is pre-installed on AWS EC2 Linux instances
 5. Install [jq](https://github.com/stedolan/jq) 
-  * To install jq on AWS EC2: `$ sudo yum install jq -y`
+    * To install jq on AWS EC2: `$ sudo yum install jq -y`
 6. Download this utility script or create a local copy and run it on the local or EC2 linux instance
-  * Example: `$ bash ./aws-asg-suspend-resume.sh -a s -n all -p MyProfileName`  
+    * Example: `$ bash ./aws-asg-suspend-resume.sh -a s -n all -p MyProfileName`  
 
 ## [Prerequisites](#prerequisites)
 
@@ -35,12 +35,14 @@ This utility provides Autoscaling suspend/resume functionality unavailable in th
 ## Deployment
 
 To execute the utility:
-  `$ bash ./aws-asg-suspend-resume.sh`  
 
-To directly execute the utility:
-  1. Set the execute flag: `$ chmod +x aws-asg-suspend-resume.sh`
-  2. Execute the utility
-  * Example: `$ ./aws-asg-suspend-resume.sh -a s -n all -p MyProfileName`    
+  * Example: `$ bash ./aws-asg-suspend-resume.sh`  
+
+To directly execute the utility:  
+
+1. Set the execute flag: `$ chmod +x aws-asg-suspend-resume.sh`
+2. Execute the utility  
+    * Example: `$ ./aws-asg-suspend-resume.sh -a s -n all -p MyProfileName`    
 
 ## Output
 
