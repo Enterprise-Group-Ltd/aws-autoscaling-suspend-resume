@@ -8,13 +8,16 @@ This utility provides Autoscaling suspend/resume functionality unavailable in th
 
 1. Instantiate a local or EC2 Linux instance
 2. Install or update the AWS CLI utilities (these are pre-installed on AWS EC2 Linux instances) 
-3. Create an AWS CLI profile that includes the required IAM permissions 
-4. Install the [bash](https://www.gnu.org/software/bash/) shell (bash is included in most distributions and is pre-installed on AWS EC2 Linux instances)
+3. Create an AWS CLI profile that includes the required IAM permissions (see "[Prerequisites](#prerequisites)" section for required IAM permissions)
+  * To create an AWS CLI profile: `$ aws configure --profile MyProfileName`
+4. Install the [bash](https://www.gnu.org/software/bash/) shell
+  * The bash shell is included in most distributions and is pre-installed on AWS EC2 Linux instances
 5. Install [jq](https://github.com/stedolan/jq) 
+  * To install jq on AWS EC2: `$ sudo yum install jq -y`
 6. Download this utility script or create a local copy and run it on the local or EC2 linux instance
-  * Example: `$ aws-asg-suspend-resume.sh -a s -n all -p myAWSCLIprofile`  
+  * Example: `$ bash ./aws-asg-suspend-resume.sh -a s -n all -p myAWSCLIprofile`  
 
-## Prerequisites
+## [Prerequisites](#prerequisites)
 
 * [bash](https://www.gnu.org/software/bash/) - Linux shell 
 * [jq](https://github.com/stedolan/jq) - JSON wrangler
@@ -31,18 +34,18 @@ This utility provides Autoscaling suspend/resume functionality unavailable in th
 To execute the utility:
   `$ bash ./aws-asg-suspend-resume.sh`  
 
-To execute the utility directly:
+To directly execute the utility:
   1. Set the execute flag: `$ chmod +x aws-asg-suspend-resume.sh`
   2. Execute the utility
-    * Example: `$ aws-asg-suspend-resume.sh -a s -n all -p myAWSCLIprofile`    
+  * Example: `$ ./aws-asg-suspend-resume.sh -a s -n all -p myAWSCLIprofile`    
 
 ## Output
 
 * Summary report 
 * Debug log (execute with the `-g y` parameter)  
-  * Example: `$ aws-asg-suspend-resume.sh -a s -n all -p myAWSCLIprofile -g y`  
+  * Example: `$ bash ./aws-asg-suspend-resume.sh -a s -n all -p myAWSCLIprofile -g y`  
 * Console verbose mode (run with the `-b y` parameter)  
-  * Example: `$ aws-asg-suspend-resume.sh -a s -n all -p myAWSCLIprofile -b y`  
+  * Example: `$ bash ./aws-asg-suspend-resume.sh -a s -n all -p myAWSCLIprofile -b y`  
 
 ## Contributing
 
