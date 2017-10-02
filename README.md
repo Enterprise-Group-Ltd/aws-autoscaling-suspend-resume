@@ -47,7 +47,7 @@ To directly execute the utility:
 * Summary report 
 * Debug log (execute with the `-g y` parameter)  
   * Example: `$ bash ./aws-asg-suspend-resume.sh -a s -n all -p MyProfileName -g y`  
-* Console verbose mode (run with the `-b y` parameter)  
+* Console verbose mode (execute with the `-b y` parameter)  
   * Example: `$ bash ./aws-asg-suspend-resume.sh -a s -n all -p MyProfileName -b y`  
 
 ## Contributing
