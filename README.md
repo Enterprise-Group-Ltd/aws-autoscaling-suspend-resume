@@ -4,6 +4,14 @@ This utility suspends or resumes AWS Autoscaling groups.
 
 This utility provides Autoscaling suspend/resume functionality unavailable in the AWS console or directly via the AWS CLI API. 
 
+This utility can: 
+
+* Suspend or resume one Autoscaling Group
+* Suspend or resume a set of like-named Autoscaling Groups
+* Suspend or resume all Autoscaling Groups
+
+This utility produces a summary report listing the suspended/resumed Autoscaling Groups. 
+
 ## Getting Started
 
 1. Instantiate a local or EC2 Linux instance
