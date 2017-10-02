@@ -11,7 +11,8 @@ This utility provides Autoscaling suspend/resume functionality unavailable in th
 3. Create an AWS CLI profile that includes the required IAM permissions 
 4. Install the [bash](https://www.gnu.org/software/bash/) shell (bash is included in most distributions and is pre-installed on AWS EC2 Linux instances)
 5. Install [jq](https://github.com/stedolan/jq) 
-6. Download this utility script or create a local copy and run it on the local or EC2 linux instance 
+6. Download this utility script or create a local copy and run it on the local or EC2 linux instance
+  * Example: `$ aws-asg-suspend-resume.sh -a s -n all -p myAWSCLIprofile "`  
 
 ## Prerequisites
 
@@ -32,13 +33,16 @@ To execute the utility:
 
 To execute the utility directly:
   1. Set the execute flag: `$ chmod +x aws-asg-suspend-resume.sh`
-  2. Execute the utility: `$ ./aws-asg-suspend-resume.sh`    
+  2. Execute the utility
+    * Example: `$ aws-asg-suspend-resume.sh -a s -n all -p myAWSCLIprofile "`    
 
 ## Output
 
 * Summary report 
-* Debug log (execute with the -g y parameter) 
-* Console verbose mode (run with the -b y parameter) 
+* Debug log (execute with the `-g y` parameter)  
+  * Example: `$ aws-asg-suspend-resume.sh -a s -n all -p myAWSCLIprofile " -g y`  
+* Console verbose mode (run with the `-b y` parameter)  
+  * Example: `$ aws-asg-suspend-resume.sh -a s -n all -p myAWSCLIprofile " -b y`  
 
 ## Contributing
 
@@ -61,5 +65,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](https://gi
 * [Progress bar](https://stackoverflow.com/questions/238073/how-to-add-a-progress-bar-to-a-shell-script)  
 * [Dynamic headers fprint](https://stackoverflow.com/questions/5799303/print-a-character-repeatedly-in-bash)
 * [Menu](https://stackoverflow.com/questions/30182086/how-to-use-goto-statement-in-shell-script)
-* Countless other jq and bash/shell Q&A, posts, etc. from various sources  
+* Countless other jq and bash/shell man pages, Q&A, posts, examples, tutorials, etc. from various sources  
 
