@@ -32,7 +32,7 @@ To execute the utility:
 
 To execute the utility directly:
   1. Set the execute flag: `$ chmod +x aws-asg-suspend-resume.sh`
-  2. `$ ./aws-asg-suspend-resume.sh`    
+  2. Execute the utility: `$ ./aws-asg-suspend-resume.sh`    
 
 ## Output
 
@@ -62,3 +62,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](https://gi
 * [Dynamic headers fprint](https://stackoverflow.com/questions/5799303/print-a-character-repeatedly-in-bash)
 * [Menu](https://stackoverflow.com/questions/30182086/how-to-use-goto-statement-in-shell-script)
 * Countless other jq and bash/shell Q&A, posts, etc. from various sources  
+
