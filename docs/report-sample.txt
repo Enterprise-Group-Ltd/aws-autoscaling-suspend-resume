@@ -1,0 +1,70 @@
+
+
+  ------------------------------------------------------------------------------------------
+  ------------------------------------------------------------------------------------------
+
+  AWS AutoScaling Group modify processes to suspend Summary Report
+
+  Script Version: 1.0.72
+
+  Date: 2017-10-02-152129
+
+  AWS Account: 123456789012  egl-sample-act
+
+  Autoscaling Group Process modification: suspend 
+
+  Autoscaling Group name matched: all 
+
+  Number of AutoScaling Groups modified to suspend: 3 
+
+
+  ------------------------------------------------------------------------------------------
+
+
+  Modified Autoscaling Group processes status:
+  -----------------------------------------------------------------------
+     
+     --------------------------------------------------------------------------------------------------------------
+     AutoScalingGroupName:EGL-api
+     SuspendedProcesses:
+      - ReplaceUnhealthy
+      - RemoveFromLoadBalancerLowPriority
+      - Terminate
+      - AZRebalance
+      - ScheduledActions
+      - Launch
+      - AddToLoadBalancer
+      - AlarmNotification
+      - HealthCheck
+     --------------------------------------------------------------------------------------------------------------
+     --------------------------------------------------------------------------------------------------------------
+     AutoScalingGroupName:EGL-ops
+     SuspendedProcesses:
+      - AddToLoadBalancer
+      - ReplaceUnhealthy
+      - HealthCheck
+      - AlarmNotification
+      - Terminate
+      - ScheduledActions
+      - AZRebalance
+      - RemoveFromLoadBalancerLowPriority
+      - Launch
+     --------------------------------------------------------------------------------------------------------------
+     --------------------------------------------------------------------------------------------------------------
+     AutoScalingGroupName:EGL-system-monitor
+     SuspendedProcesses:
+      - AddToLoadBalancer
+      - AZRebalance
+      - HealthCheck
+      - ScheduledActions
+      - AlarmNotification
+      - RemoveFromLoadBalancerLowPriority
+      - ReplaceUnhealthy
+      - Terminate
+      - Launch
+    
+
+  ------------------------------------------------------------------------------------------
+  ------------------------------------------------------------------------------------------
+
+
