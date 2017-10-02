@@ -25,11 +25,11 @@ This utility provides Autoscaling suspend/resume functionality unavailable in th
 * [bash](https://www.gnu.org/software/bash/) - Linux shell 
 * [jq](https://github.com/stedolan/jq) - JSON wrangler
 * [AWS CLI](https://aws.amazon.com/cli/) - command line utilities (pre-installed on AWS AMIs) 
-- AWS CLI profile with IAM permissions for the following AWS CLI commands:  
-  - autoscaling describe-auto-scaling-groups  
-  - autoscaling suspend-processes  
-  - autoscaling resume-processes    
-  - sts get-caller-identity  (used to pull the AWS account number for the report)
+* AWS CLI profile with IAM permissions for the following AWS CLI commands:  
+  * autoscaling describe-auto-scaling-groups  
+  * autoscaling suspend-processes  
+  * autoscaling resume-processes    
+  * sts get-caller-identity  (used to pull the AWS account number for the report)
 
 
 ## Deployment
