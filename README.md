@@ -12,7 +12,7 @@ This utility provides Autoscaling suspend/resume functionality unavailable in th
 4. Install the [bash](https://www.gnu.org/software/bash/) shell (bash is included in most distributions and is pre-installed on AWS EC2 Linux instances)
 5. Install [jq](https://github.com/stedolan/jq) 
 6. Download this utility script or create a local copy and run it on the local or EC2 linux instance
-  * Example: `$ aws-asg-suspend-resume.sh -a s -n all -p myAWSCLIprofile "`  
+  * Example: `$ aws-asg-suspend-resume.sh -a s -n all -p myAWSCLIprofile`  
 
 ## Prerequisites
 
@@ -34,15 +34,15 @@ To execute the utility:
 To execute the utility directly:
   1. Set the execute flag: `$ chmod +x aws-asg-suspend-resume.sh`
   2. Execute the utility
-    * Example: `$ aws-asg-suspend-resume.sh -a s -n all -p myAWSCLIprofile "`    
+    * Example: `$ aws-asg-suspend-resume.sh -a s -n all -p myAWSCLIprofile`    
 
 ## Output
 
 * Summary report 
 * Debug log (execute with the `-g y` parameter)  
-  * Example: `$ aws-asg-suspend-resume.sh -a s -n all -p myAWSCLIprofile " -g y`  
+  * Example: `$ aws-asg-suspend-resume.sh -a s -n all -p myAWSCLIprofile -g y`  
 * Console verbose mode (run with the `-b y` parameter)  
-  * Example: `$ aws-asg-suspend-resume.sh -a s -n all -p myAWSCLIprofile " -b y`  
+  * Example: `$ aws-asg-suspend-resume.sh -a s -n all -p myAWSCLIprofile -b y`  
 
 ## Contributing
 
