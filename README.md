@@ -18,7 +18,8 @@ This utility produces a summary report listing the suspended/resumed Autoscaling
 2. Install or update the AWS CLI utilities
     * The AWS CLI utilities are pre-installed on AWS EC2 Linux instances
     * To update on an AWS EC2 instance: `$ sudo pip install --upgrade awscli` 
-3. Create an AWS CLI named profile that includes the required IAM permissions (see "[Prerequisites](#prerequisites)" section for required IAM permissions)
+3. Create an AWS CLI named profile that includes the required IAM permissions 
+    * See the "[Prerequisites](#prerequisites)" section for the required IAM permissions
     * To create an AWS CLI named profile: `$ aws configure --profile MyProfileName`
     * AWS CLI named profile documentation is here: [Named Profiles](http://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html)
 4. Install the [bash](https://www.gnu.org/software/bash/) shell
